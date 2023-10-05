@@ -1,0 +1,832 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(100,100,100,0.2);
+    position: fixed;
+    z-index: 100;
+}
+.heading-content {
+    line-height: 60px;
+}
+.logo {
+    width: 200px;
+    height: 60px;
+    margin-left: 100;
+    float: left;
+}
+.heading-list {
+    list-style: none;
+    float: left;
+    margin-left: 350px;
+}
+.heading-list a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/* /////////////////////////////////////////////////end of header ///////////////////////////////////////////////// */
+.firstview {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.firstview-content {
+    width: 60%;
+    /* hero image  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.firstview-content h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+}
+.firstview-content p {
+    font-size: 20px;
+    color: rgb(190, 190, 190);
+    text-transform: lowercase;
+    padding: 0 10 10 10;
+}
+.firstview-btn {
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 12 18;
+    border-radius: 10px;
+    margin: 4 12 10 0;
+}
+.btn1 {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+.btn1:hover {
+    background-color: rgb(197, 197, 197);
+}
+.btn2 {
+    color: white;
+    background-color: blue;
+    border-color: blue;
+}
+.btn2:hover {
+    background-color: rgb(31, 31, 255);
+ }
+    /* /////////////////////////////////////////end of firstview //////////////////////////////////////////////////// */
+.welcome {
+    width: 100%;
+    height: 100vh;
+}
+.welcome-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 150 0 50 0;
+}
+.welcome-title p {
+    margin: auto;
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+}
+.welcome-container {
+    width: 80%;
+    margin: auto;
+}
+.welcome-content {
+    margin: 100 0;
+}
+.welcome-content-item {
+    float: left;
+    border: 1px solid black;
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+.welcome-content-item::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.welcome-content-item:hover::after {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.welcome-content-item:hover .welcome-itemh2 {
+    color: yellow;
+    transition: 1s;
+}
+.welcome-content-item i {
+    font-size: 30px;
+    color: rgb(0, 174, 255);
+    padding: 25 0 0 0;
+}
+.welcome-content-item h2 {
+    text-transform: capitalize;
+    padding: 10;
+}
+.welcome-content-item p {
+    font-size: 18px;
+    text-transform: lowercase;
+    color: gray;
+}
+.welcome-content-item-link a {
+    text-decoration: none;
+    color: rgb(0, 174, 255);
+    text-transform: capitalize;
+}
+.welcome-content-item-link {
+    padding: 20 0 30 0;
+}
+.wlc2 {
+    margin: 0 5%;
+}
+/* ///////////////////////////////////   end of welome /////////////////////// ///////////////////////////// */
+.featured {
+    width: 100%;
+    background-color: rgb(180, 180, 180);
+}
+.featured-title {
+    width: 100%;
+}
+.featured-title h1 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100 0 10 0;
+}
+.featured-title p {
+    margin: auto;
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+}
+.featured-content {
+    margin-top: 80;
+    width: 100%;
+    height: 125vh;
+}
+.featured-container {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+.featured-item {
+    float: left;
+    width: 30%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50;
+}
+.featured-item-wht {
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    margin: 5% ;
+}
+.featured-item-img {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+}
+.feat2 {
+    margin: 0 5%;
+}
+.featured-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 1s;
+}
+.overlay-content {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 80;
+    width: 100%;
+}
+.overlay-content span {
+    color: blue;
+    padding: 5;
+}
+.overlay-content p {
+    color: white;
+    font-size: 25;
+    padding-bottom: 20;
+}
+.overlay-content i {
+    color: violet;
+    background-color: blue;
+    padding: 10;
+}
+.featured-item:hover .featured-overlay {
+    opacity: 1;
+}
+/* /////////////////////////////////////////end of featured ///////////////////////////////////////////////////////////// */
+.offer {
+    width: 100%;
+}
+.offer-title {
+    width: 100%;
+}
+.offer-title h1 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100 0 10 0;
+}
+.offer-title p {
+    margin: auto;
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+}
+.offer-content {
+    width: 100%;
+}
+.offer-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 60;
+}
+.offer-item {
+    width: 30%;
+    border: 1px solid black;
+    overflow: auto;
+    float: left;
+    position: relative;
+}
+.offer-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.offer-item:hover::after {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.offer-item i {
+    font-size: 40;
+}
+.offer-item-icon {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.offer-item-icon i {
+    padding-top: 20;
+    font-size: 40;
+    color: rgb(0, 174, 255);
+}
+.offer-item-content {
+    width: 80%;
+    float: left;
+    padding-top: 20;
+}
+.offer-item-content h2 {
+    text-transform: capitalize;
+    padding-top: 8;
+}
+.offer-item-content p {
+    color: gray; 
+    padding-top: 20;
+    padding-bottom: 40;
+    text-transform: capitalize;
+    font-size: 18;
+}
+.off2 {
+    margin: 0 5%;
+}
+.items-second-line {
+    display: inline-block;
+    margin: 40 0;
+}
+/* //////////////////////////////////////////////end of offer///////////////////////////////////////////////////////// */
+.choose {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(210, 210, 250, 0.5);
+    position: relative;
+}
+.choose-container {
+    width: 80%;
+    height: 70vh;
+    position: absolute;
+    margin: 100 10%;
+}
+.choose-writing {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.choose-writing-title {
+    padding: 0 0 30 0;
+}
+.choose-writing-title h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.choose-writing-title p {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: 10 0;
+}
+.choose-topmenu {
+    color: rgb(99, 99, 99);
+    font-size: 18;
+    text-transform: lowercase;
+    padding: 0 0 30 0;
+}
+.choose-menu {
+    font-size: 16;
+    color: rgb(99, 99, 99);
+    padding: 0 0 10 0;
+}
+.choose-menu i {
+    color: blue;
+}
+.choose-photo {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.choose-image {
+    width: 100%;
+    height: 85%;
+    background-color: white;
+}
+.choose-image img{
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+}
+.choose-list {
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+.choose-list li {
+    width: 10;
+    height: 10;
+    display: inline-block;
+    background-color: gray;
+    margin: 15 8;
+    border-radius: 50%;
+}
+.choose-list li:hover {
+    background-color: blue;
+}
+/* /////////////////////////////////////////end of choose/////////////////////////////////////////////////// */
+.projects {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/desktop-wallpaper-night-aesthetic-laptop-city-aesthetic.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.projects-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.projects-item {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    float: left;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.projects-item-content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate( 0 , -50% );
+}
+.projects-item-content i {
+    font-size: 40;
+    color: rgb(0, 174, 255);
+}
+.projects-nbr {
+    font-size: 30;
+    padding-top: 15;
+}
+.projects-item-content p {
+    color: white;
+}
+/* ////////////////////////////////////////end of projects////////////////////////////////////////////////// */
+.pricing {
+    width: 100%;
+}
+.pricing-title {
+    width: 100%;
+}
+.pricing-title h1 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100 0 10 0;
+}
+.pricing-title p {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: auto
+}
+.pricing-content {
+    width: 100%;
+    margin: 100 0 150 0;
+}
+.pricing-container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.pricing-item {
+    width: 30%;
+    border: 1px solid rgb(185, 185, 185);
+    text-align: center;
+    float: left;
+    position: relative;
+}
+.pricing-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 1s;
+}
+.pricing-item:hover::after {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.pricing-item:hover .prired {
+    color: red;
+    transition: 0.5s;
+}
+.item-title {
+    text-transform: uppercase;
+    color: rgb(185, 185, 185);
+    padding: 20 0 20 0;
+}
+.item-circle {
+    width: 100;
+    height: 100;
+    margin: auto;
+    border: 1px solid blue;
+    border-radius: 50%;
+    text-align: center;
+}
+.item-nbr {
+    margin-top: 10;
+    font-size: 45;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item-time {
+    font-size: 20;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item-content {
+    margin: 20 0 20 0;
+}
+.item-content p {
+    color: rgb(185, 185, 185);
+    font-size: 20;
+    padding: 3;
+}
+.pricing-item button {
+    border: 1px solid blue;
+    padding: 5 10;
+    margin: 0 0 30 0;
+}
+.pri2 {
+    margin: 0 5%;
+}
+/* ///////////////////////////////////////////end of pricing////////////////////////////////////// */
+.design {
+    width: 100%;
+    height: 300;
+    background-image: url(../images/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 20 0;
+}
+.design-container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+}
+.design-item {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.design-item-title{
+    overflow: auto;
+    margin: 80 0 20 20;
+}
+.design-title-photo {
+    width: 70;
+    height: 70;
+    border-radius: 50%;
+    background-image: url(../images/profile-picture.jpeg);
+    background-size: cover;
+    float: left;
+}
+.design-title-content {
+    float: left;
+    margin: 0 0 0 20;
+}
+.design-title-content h3 {
+    text-transform: capitalize;
+    font-size: 25;
+    line-height: 40px;
+    color: white;
+}
+.design-title-content h4 {
+    line-height: 20px;
+    color: rgb(0, 255, 0);
+}
+.design-item p {
+    padding: 0 20;
+    color: rgb(216, 216, 216);
+}
+/* ////////////////////////////////////////////////end of design///////////////////////////////////////////////////////// */
+.team {
+    width: 100%;
+    /* height: 100vh; */
+}
+.team-title {
+    width: 100%;
+}
+.team-title h1 {
+    font-size: 40;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100 0 10 0;
+    text-transform: capitalize;
+}
+.team-title p {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: auto
+}
+.team-content {
+    width: 100%;
+    margin: 100 0;
+}
+.team-container {
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+.team-item {
+    width: 30%;
+    float: left;
+    background-color: rgb(200, 200, 200);
+    position: relative;
+}
+.team-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 1s;
+}
+.team-item:hover::after {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.team-item:hover .team-item-sent1 {
+    color: white;
+}
+.team-item:hover .team-item-sent2 {
+    color: blue;
+}
+.team-item-logo {
+    width: 90%;
+    height: 300;
+    margin: 5%;
+    position: relative;
+}
+.team-item-photo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.team-item-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 1s;
+}
+.team-item-content {
+    width: 100%;
+    text-align: center;
+}
+.team-item-sent1 {
+    font-size: 20;
+    text-transform: capitalize;
+    padding: 5;
+}
+.team-item-sent2 {
+    text-transform: uppercase;
+    font-size: 16;
+    padding: 0 0 20 0;
+    color: rgb(120, 120, 120);
+}
+.team-item-overlay i {
+    color: white;
+    display: block;
+    height: 40;
+    width: 40;
+    font-size: 20;
+    text-align: center;
+    line-height: 40px;
+    margin-left: auto;
+    background-color: rgba(0, 0, 255, 0.8);
+}
+.team-item:hover .team-item-overlay {
+    opacity: 1;
+}
+.team2 {
+    margin: 0 5%;
+}
+/* /////////////////////////////////////////////end of team/////////////////////////////////////////////////////////////////////// */
+.recent {
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.4);
+}
+.recent-title {
+    width: 100%;
+    margin: 0 0 100 0;
+}
+.recent-title h1 {
+    text-align: center;
+    font-size: 40;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50 0 10 0;
+}
+.recent-title p {
+    width: 80;
+    height: 5;
+    background-color: blue;
+    margin: auto;
+}
+.recent-content {
+    width: 100%;
+}
+.recent-container {
+    width: 80%;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.329);
+    overflow: auto;
+}
+.recent-item {
+    width: 30%;
+    background-color: white;
+    float: left;
+    position: relative;
+}
+.recent-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 255, 0.4);
+    transition: 1s;
+}
+.recent-item:hover::after {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.recent-item img {
+    width: 90%;
+    height: 300px;
+    margin: 0 0 20 5%;
+}
+.recent-firstp{
+    width: 100%;
+    text-align: center;
+    font-size: 12;
+}
+.recenti2 {
+    margin-left: 20;
+}
+.recent-firstp i {
+    color: blue;
+}
+.recent-item h3 {
+    text-transform: capitalize;
+    padding: 15 0 15 10;
+}
+.recent-item p {
+    text-transform: lowercase;
+    padding: 0 10 15 10;
+    color: gray;
+}
+.recent-item a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: blue;
+    padding: 0 0 0 20;
+}
+.recent2 {
+    margin: 0 5%;
+}
+/* ////////////////////////////////////////////////////////////////end of recent/////////////////////////////////////////// */
+.end {
+    width: 100%;
+    height: 400;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.end-content {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+.end-content img{
+    width: 40%;
+    margin: 50 0 20 30%;
+}
+.end-links {
+    width: 100%;
+    text-align: center;
+}
+.end-links i {
+    color: white;
+    background-color: rgb(46, 107, 219);
+    width: 60;
+    height: 60;
+    font-size: 30;
+    line-height: 60px;
+    border-radius: 50%;
+    margin-right: 10;
+}
+.end-links i:hover {
+    background-color: rgb(0, 68, 255);
+}
+.end-links p {
+    color: gray;
+    font-size: 14;
+    margin-top: 40;
+}
